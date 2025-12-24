@@ -11,4 +11,4 @@ services:
       - vol-app: /app/public/images
 
 volumes:
-  - vol-app:
+  vol-app:
