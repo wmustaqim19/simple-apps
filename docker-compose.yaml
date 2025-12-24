@@ -5,7 +5,7 @@ services:
     image: wmustaqim1019/simple-apps
     build: .
     ports:
-      -"5000:3000"
+      - "5000:3000"
     restart: always
     volumes:
       - vol-app:/app/public/images
