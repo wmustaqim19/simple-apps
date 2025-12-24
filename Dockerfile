@@ -5,7 +5,7 @@ COPY package*.json ./
 RUN npm install
 
 #Copy only necessary files
-FROM node:18-alpine AS build
+FROM node:18-alpine
 WORKDIR /app
 COPY --from=build /app/node_modules ./node_modules
 COPY package*.json ./
